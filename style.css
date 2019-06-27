@@ -5,6 +5,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
@@ -93,6 +94,64 @@ body {
     display: flex;
   }
 
-.big {
-  height: 10000px;
+  .brand-title {
+    font-size: 1rem;
+  }
+
+}
+
+#home-background {
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url(https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 3rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-shadow: 3px 3px 3px #111;
+}
+
+#home-background h1 {
+  margin-top: 123px;
+  font-size: 2rem;
+}
+
+#home-background p {
+  font-size: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 2rem;
+}
+
+.freecodecamp {
+  color: #318724;
+}
+
+
+@media (max-width: 700px) {
+  #home-background {
+    padding: 20px;
+  }
+
+  #home-background h1 {
+    margin-top: 43px;
+    font-size: 1.2rem;
+  }
+
+  #home-background p {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .content.down {
+    margin-top: 120px;
+  }
 }
