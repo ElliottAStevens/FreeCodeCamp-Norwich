@@ -166,15 +166,15 @@ a {
     padding: 0;
   }
 
-  .content.down {
-    margin-top: 120px;
+  main.down {
+    padding-top: 120px;
   }
 }
 
 /* curriculum page *************************************** */
 
 
-.main-content {
+.curriculum-content {
   display: grid;
   flex-direction: column;
   grid-gap: 20px;
@@ -206,13 +206,10 @@ footer {
   background-color: #318724;
   height: 63px;
   width: 100%;
-}
-
-footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 footer a {
@@ -220,3 +217,112 @@ footer a {
 }
 
 
+@media (max-width: 1000px) {
+  main p {
+    font-size: 16px;
+  }
+
+  .front-end,.back-end,.dev-ops {
+    grid-template-columns: 1fr;
+  }
+
+  .back-end-a {
+    order: 3;
+  }
+
+  .backend-image {
+    order: 4;
+  }
+
+  .curriculum-content {
+    margin: 63px 20px 20px 20px;
+  }
+}
+
+
+/* socials************************* */
+
+#socials {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  max-width: 800px;
+  max-height: 900px;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 100px;
+}
+
+.card {
+  box-shadow: 0 0 20px 0 rgba(49, 135, 36, 0.7);
+  padding: 30px;
+}
+
+.card ul {
+  padding: 0;
+  margin: 0;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 100px;
+}
+
+.card ul li a {
+  margin-left: 30px;
+  padding-right: 10px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: rgba(49, 135, 36, 0.8);
+}
+
+.card ul li a:hover {
+  background-color: rgba(49, 135, 36, 0.8);
+  border-radius: 10px;
+  color: #eee;
+}
+
+@media (max-width: 768px) {
+  
+  .container h1 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .card h2 {
+    font-size: 0.9rem;
+    margin-bottom: 50px;
+  }
+
+  .card li i {
+    display: block;
+    text-align: center;
+  }
+
+  .card li {
+    text-align: center;
+  }
+
+  .card ul li a {
+    margin-left: 0;
+    padding-right: 0;
+    font-size: 1.1rem;
+  }
+}
